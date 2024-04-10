@@ -1,0 +1,8 @@
+body{
+        background-image: url(/src/images/wallpaper1.jpg);
+        background-size: cover;
+        background-position: center;
+}
+table{
+    background-color: rgba(249, 249, 249, 0.627);
+}
