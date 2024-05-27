@@ -42,17 +42,17 @@
 
 .delete{
   padding: 3px 6px;
-  background-color: rgba(240, 11, 11, 0.671);
+  background-color: rgba(250, 83, 83, 0.671);
   cursor: pointer;
 }
 .update{
   padding: 3px 6px;
-  background-color: rgb(11, 182, 139);
+  background-color: rgb(79, 240, 20);
   cursor: pointer;
 }
 .users-button{
   padding: 3px 6px; 
-  background-color: rgb(245, 233, 9);
+  background-color:  rgba(70, 101, 126, 0.272);
   width: auto;
   height: 40px;
   border-color: rgb(6, 45, 173);
@@ -65,7 +65,7 @@
 .h1-design{
   padding: 6px 6px;
   width: auto;
-  background-color: rgba(32, 243, 0, 0.396);
+  background-color: rgba(70, 101, 126, 0.587);
   border-radius: 15px;
   border: groove;
 }
@@ -75,14 +75,15 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
+  box-shadow: 0 50px 60px rgba(0, 0, 0, 8);
+  border-radius: 10px;
+  padding: 10px;
 }
-
 input{
   border: 1px solid rgb(15, 102, 225);
   border-radius: 20px;
   padding: 10px;
 }
-
 .updateButton{
   border: none;
   padding: 10px;
@@ -90,55 +91,77 @@ input{
   background-color: rgb(15, 102, 225);
   font-weight: bold;
   cursor: pointer;
-}
-.signupbutton{
-  border: none;
-  padding: 10px;
-  color: white;
-  background-color: rgb(15, 102, 225);
-  font-weight: bold;
-  cursor: pointer;
+  border-radius: 8px;
 }
 /* per produkte */
-.produktet{
+
+/* .produktet{
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .produkti{
+  flex-basis: calc(33.33% - 20px);
   display: flex;
   flex: 1;
   gap: 3px;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
+  /* height: auto; */
+/* } */
+/* .produkti p {
+  width: 100%;
+  white-space: pre-wrap;
+} */
+.produktet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  margin-left: 5%;
+}
+.produkti {
+  margin-left: 7.5%;
+  flex-basis: calc(25.33% - 20px); 
+  margin-bottom: 50px; 
+}
+.description-container {
+  max-height: 100px; 
+  overflow-y: auto;
+}
+.description {
+  white-space: pre-wrap; 
 }
 img{
   object-fit: cover;
   width: 200px;
   height: 300px;
   background-color: #61dafb;
+  border: solid rgba(220, 213, 213, 0.995) 2px;
+  border-radius: 10px;
 }
 .delete-product{
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 3px 6px;
-  background-color: rgba(210, 75, 75, 0.807);
+  background-color: rgb(234, 9, 9);
   cursor: pointer;
   font-weight: bold;
 }
 .update-product{
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 3px 6px;
-  background-color: rgba(16, 162, 215, 0.807);
+  background-color: rgb(79, 240, 20);
   cursor: pointer;
   font-weight: bold;
 }
 .shto-produktet{
+  margin-left: 12%;
   padding: 3px 6px; 
-  background-color: rgb(245, 233, 9);
+  background-color: rgba(70, 101, 126, 0.272);
   width: auto;
   height: 40px;
-  border-color: rgb(6, 45, 173);
+  border-color: rgba(6, 45, 173, 0.333);
   border-radius: 20px;
   cursor: pointer;
   font-size: larger;
@@ -146,15 +169,12 @@ img{
   margin-bottom: 10px;
 }
 .h1-topogani{
-  margin-left: 30%;
-  margin-right: 30%;
+  padding: 6px 6px;
   width: auto;
-  background-color: rgba(32, 243, 0, 0.396);
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  background-color: rgba(70, 101, 126, 0.587);
   border-radius: 15px;
   border: groove;
+  /* margin-left: 10%; */
 }
 .all-products{
   width: 60px;
@@ -167,7 +187,69 @@ img{
 .h1-prod{
   padding: 6px 6px;
   width: auto;
-  background-color: rgba(32, 243, 0, 0.396);
+  background-color: rgba(70, 101, 126, 0.587);
   border-radius: 15px;
   border: groove;
+}
+/* per Log In */
+.lgn{
+  margin-top: 10%;
+  background-color: transparent;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 50px 60px rgba(0, 0, 0, 8);
+   border: 2% ;
+   align-items: flex-start;
+   width: 350px;
+   height: auto;
+}
+.mb-3{
+  color: rgb(70, 101, 126);
+  font-weight: bold;
+}
+.loginbutton{
+  border-radius: 10px;
+  border:solid;
+  padding: 10px;
+  color: white;
+  background-color: rgb(15, 102, 225);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*per signup*/
+.lgnn{
+  margin-top: 1%;
+  background-color: transparent;
+   padding: 20px;
+   border-radius: 8px;
+   /* box-shadow: 0 50px 60px rgba(0, 0, 0, 8); */
+   border: 2% solid;
+   align-items: flex-start;
+   width: 350px;
+   height: auto;
+}
+.signupbutton{
+  border: none;
+  padding: 10px;
+  color: white;
+  background-color: rgb(15, 102, 225);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* per sidebar */
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f0f0f0;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
 }
